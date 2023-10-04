@@ -8,5 +8,6 @@
         "target" : "ES6", // js버전 - 가장 호환성이 좋음
         "lib": ["ES6", "DOM"],
         "strict" : true, // 활성화
+        "allowJs": true, // d.ts 말고 파일자체에서 import 받을 수 있음
     },
 }
