@@ -1,0 +1,12 @@
+{
+    "include": [
+        "src" 
+    ],
+    "compilerOptions": { 
+        "outDir": "build",
+        "esModuleInterop": true,
+        "target" : "ES6", // js버전 - 가장 호환성이 좋음
+        "lib": ["ES6", "DOM"],
+        "strict" : true, // 활성화
+    },
+}
