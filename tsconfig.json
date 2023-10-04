@@ -4,10 +4,11 @@
     ],
     "compilerOptions": { 
         "outDir": "build",
-        "esModuleInterop": true,
         "target" : "ES6", // js버전 - 가장 호환성이 좋음
-        "lib": ["ES6", "DOM"],
+        "lib": ["ES6"], // "DOM" 삭제함. 브라우저에서 돌릴게 아니라서.
         "strict" : true, // 활성화
-        "allowJs": true, // d.ts 말고 파일자체에서 import 받을 수 있음
+        // "allowJs": true, // d.ts 말고 파일자체에서 import 받을 수 있음 
+        "esModuleInterop": true,
+        "module": "CommonJS", // 브라우저라면 "umd"
     },
 }
